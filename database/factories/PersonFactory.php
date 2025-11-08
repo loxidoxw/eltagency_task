@@ -17,10 +17,9 @@ class PersonFactory extends Factory
     public function definition(): array
     {
         return [
-            'type' => $this->faker->randomElement(['actor', 'director', 'writer', 'composer']),
             'name_ua' => $this->faker->name(),
             'name_en' => $this->faker->name(),
-            'photo'=> $this->faker->imageUrl(),
+            'photo'=> 'people/pfp.jpg',
         ];
     }
 }

@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('people', function (Blueprint $table) {
             $table->id();
-            $table->enum('type', ['actor', 'director', 'writer', 'composer']);
             $table->string('name_ua');
             $table->string('name_en');
             $table->string('photo')->nullable();

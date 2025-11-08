@@ -16,7 +16,7 @@ return new class extends Migration
 
             $table->foreignId('film_id')->constrained()->cascadeOnDelete();
             $table->foreignId('person_id')->constrained()->cascadeOnDelete();
-
+            $table->enum('role', ['actor', 'director', 'writer', 'composer']);
             $table->timestamps();
         });
     }

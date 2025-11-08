@@ -9,8 +9,10 @@ class Person extends Model
 {
     use HasFactory;
 
+
     public function films()
     {
-        return $this->belongsToMany(Film::class);
+        return $this->belongsToMany(Film::class)
+            ->withPivot('role');
     }
 }

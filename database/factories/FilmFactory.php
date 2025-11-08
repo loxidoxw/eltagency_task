@@ -18,11 +18,11 @@ class FilmFactory extends Factory
     {
         return [
             'status' => $this->faker->randomElement(['show', 'hide']),
-            'title_ua' => $this->faker->name(),
+            'title_ua' => 'Якийсь фільм',
             'title_en' => $this->faker->name(),
-            'description_ua' => $this->faker->name(),
+            'description_ua' => 'Якийсь опис',
             'description_en' => $this->faker->name(),
-            'poster'=> $this->faker->imageUrl(),
+            'poster'=> 'posters/Arcane_poster.jpg',
             'trailer_id'=> $this->faker->randomNumber(),
             'release_year'=> $this->faker->year(),
             'start_at'=> fake()->dateTimeBetween('-1 month', '+1 month'),
